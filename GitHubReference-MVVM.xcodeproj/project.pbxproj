@@ -101,6 +101,10 @@
 		F406A3DF275368A5008D9BD8 /* GitHubReference-MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				F406A41527536B1B008D9BD8 /* Model */,
+				F406A41427536B10008D9BD8 /* View */,
+				F406A41627536B25008D9BD8 /* ViewModel */,
+				F406A41327536AFB008D9BD8 /* Controller */,
 				F406A3E0275368A5008D9BD8 /* AppDelegate.swift */,
 				F406A3E2275368A5008D9BD8 /* SceneDelegate.swift */,
 				F406A3E4275368A5008D9BD8 /* ViewController.swift */,
@@ -128,6 +132,34 @@
 				F406A406275368A7008D9BD8 /* GitHubReference_MVVMUITestsLaunchTests.swift */,
 			);
 			path = "GitHubReference-MVVMUITests";
+			sourceTree = "<group>";
+		};
+		F406A41327536AFB008D9BD8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F406A41427536B10008D9BD8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F406A41527536B1B008D9BD8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F406A41627536B25008D9BD8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
