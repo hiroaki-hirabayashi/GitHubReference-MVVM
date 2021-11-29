@@ -17,6 +17,8 @@
 		F406A3FB275368A7008D9BD8 /* GitHubReference_MVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406A3FA275368A7008D9BD8 /* GitHubReference_MVVMTests.swift */; };
 		F406A405275368A7008D9BD8 /* GitHubReference_MVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406A404275368A7008D9BD8 /* GitHubReference_MVVMUITests.swift */; };
 		F406A407275368A7008D9BD8 /* GitHubReference_MVVMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406A406275368A7008D9BD8 /* GitHubReference_MVVMUITestsLaunchTests.swift */; };
+		F406A4182754B362008D9BD8 /* RxMVVM.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F406A4172754B362008D9BD8 /* RxMVVM.storyboard */; };
+		F406A41A2754B480008D9BD8 /* RxMVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406A4192754B480008D9BD8 /* RxMVVMViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		F406A400275368A7008D9BD8 /* GitHubReference-MVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GitHubReference-MVVMUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F406A404275368A7008D9BD8 /* GitHubReference_MVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubReference_MVVMUITests.swift; sourceTree = "<group>"; };
 		F406A406275368A7008D9BD8 /* GitHubReference_MVVMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubReference_MVVMUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F406A4172754B362008D9BD8 /* RxMVVM.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RxMVVM.storyboard; sourceTree = "<group>"; };
+		F406A4192754B480008D9BD8 /* RxMVVMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxMVVMViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,8 @@
 				F406A3EE275368A7008D9BD8 /* LaunchScreen.storyboard */,
 				F406A3F1275368A7008D9BD8 /* Info.plist */,
 				F406A3E9275368A5008D9BD8 /* GitHubReference_MVVM.xcdatamodeld */,
+				F406A4172754B362008D9BD8 /* RxMVVM.storyboard */,
+				F406A4192754B480008D9BD8 /* RxMVVMViewController.swift */,
 			);
 			path = "GitHubReference-MVVM";
 			sourceTree = "<group>";
@@ -266,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F406A4182754B362008D9BD8 /* RxMVVM.storyboard in Resources */,
 				F406A3F0275368A7008D9BD8 /* LaunchScreen.storyboard in Resources */,
 				F406A3ED275368A7008D9BD8 /* Assets.xcassets in Resources */,
 				F406A3E8275368A5008D9BD8 /* Main.storyboard in Resources */,
@@ -296,6 +303,7 @@
 				F406A3EB275368A5008D9BD8 /* GitHubReference_MVVM.xcdatamodeld in Sources */,
 				F406A3E5275368A5008D9BD8 /* ViewController.swift in Sources */,
 				F406A3E1275368A5008D9BD8 /* AppDelegate.swift in Sources */,
+				F406A41A2754B480008D9BD8 /* RxMVVMViewController.swift in Sources */,
 				F406A3E3275368A5008D9BD8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
