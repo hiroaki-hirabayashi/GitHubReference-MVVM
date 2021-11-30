@@ -22,6 +22,7 @@
 		F406A4182754B362008D9BD8 /* RxMVVM.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F406A4172754B362008D9BD8 /* RxMVVM.storyboard */; };
 		F406A41A2754B480008D9BD8 /* RxMVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406A4192754B480008D9BD8 /* RxMVVMViewController.swift */; };
 		F406A41D27566A7A008D9BD8 /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406A41C27566A7A008D9BD8 /* GitHubAPI.swift */; };
+		F406A41F27566D8C008D9BD8 /* GitHubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406A41E27566D8C008D9BD8 /* GitHubModel.swift */; };
 		F6C4B6778AA7B9E21A79A13C /* Pods_GitHubReference_MVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BEA61F1314EA1D44FE717AD /* Pods_GitHubReference_MVVM.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,7 @@
 		F406A4172754B362008D9BD8 /* RxMVVM.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RxMVVM.storyboard; sourceTree = "<group>"; };
 		F406A4192754B480008D9BD8 /* RxMVVMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxMVVMViewController.swift; sourceTree = "<group>"; };
 		F406A41C27566A7A008D9BD8 /* GitHubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
+		F406A41E27566D8C008D9BD8 /* GitHubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +111,6 @@
 				4349F57F8C1CC88CD4E232DA /* Pods-GitHubReference-MVVMTests.debug.xcconfig */,
 				0AF0EC4D18A293E90131603B /* Pods-GitHubReference-MVVMTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -201,6 +202,7 @@
 		F406A41527536B1B008D9BD8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F406A41E27566D8C008D9BD8 /* GitHubModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -464,6 +466,7 @@
 				F406A41D27566A7A008D9BD8 /* GitHubAPI.swift in Sources */,
 				F406A3E5275368A5008D9BD8 /* ViewController.swift in Sources */,
 				F406A3E1275368A5008D9BD8 /* AppDelegate.swift in Sources */,
+				F406A41F27566D8C008D9BD8 /* GitHubModel.swift in Sources */,
 				F406A41A2754B480008D9BD8 /* RxMVVMViewController.swift in Sources */,
 				F406A3E3275368A5008D9BD8 /* SceneDelegate.swift in Sources */,
 			);
