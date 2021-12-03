@@ -164,7 +164,6 @@
 				F406A3EE275368A7008D9BD8 /* LaunchScreen.storyboard */,
 				F406A3F1275368A7008D9BD8 /* Info.plist */,
 				F406A3E9275368A5008D9BD8 /* GitHubReference_MVVM.xcdatamodeld */,
-				F406A4172754B362008D9BD8 /* RxMVVM.storyboard */,
 			);
 			path = "GitHubReference-MVVM";
 			sourceTree = "<group>";
@@ -189,7 +188,7 @@
 		F406A41327536AFB008D9BD8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F406A4192754B480008D9BD8 /* RxMVVMViewController.swift */,
+				F406A422275A748D008D9BD8 /* MVVM */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -223,6 +222,15 @@
 				F406A41C27566A7A008D9BD8 /* GitHubAPI.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		F406A422275A748D008D9BD8 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				F406A4192754B480008D9BD8 /* RxMVVMViewController.swift */,
+				F406A4172754B362008D9BD8 /* RxMVVM.storyboard */,
+			);
+			path = MVVM;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
