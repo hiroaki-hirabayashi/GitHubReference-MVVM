@@ -23,7 +23,7 @@ protocol MVVMViewModelOutput {
 }
 
 /// ViewModelはInputとOutputのprotocolに準拠する
-final class MVVMMvvmViewModel: MVVMViewModelInput, MVVMViewModelOutput, HasDisposeBag {
+final class MVVMViewModel: MVVMViewModelInput, MVVMViewModelOutput, HasDisposeBag {
 
     // inputについての記述
     // 入力側の定型文的な書き方
