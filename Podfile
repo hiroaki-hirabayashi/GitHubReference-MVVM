@@ -9,9 +9,9 @@ target 'GitHubReference-MVVM' do
 
     pod 'Alamofire'
     pod 'NSObject+Rx'
-    pod 'RxCocoa'
-    pod 'RxOptional'
-    pod 'RxSwift'
+    pod 'RxCocoa', '5.1.1'
+    pod 'RxOptional', '4.1.0'
+    pod 'RxSwift', '5.1.1'
     
   target 'GitHubReference-MVVMTests' do
     inherit! :search_paths

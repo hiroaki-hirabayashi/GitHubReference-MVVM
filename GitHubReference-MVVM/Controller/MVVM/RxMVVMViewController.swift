@@ -7,17 +7,18 @@
 
 import Foundation
 import NSObject_Rx
+import RxOptional
 import RxSwift
 import UIKit
 
 final class RxMVVMViewController: UIViewController, HasDisposeBag {
     @IBOutlet private weak var textField: UITextField!
     @IBOutlet private weak var segmentedControl: UISegmentedControl!
-    @IBOutlet private weak var tableView: UITableView!
-//    didSet {
-//        tableView.register(TableViewCell.loadNib(), forCellReuseIdentifier: TableViewCell.reuseIdentifier)
-//    }
-    
+    @IBOutlet private weak var tableView: UITableView! {
+        didSet {
+            tableView.register(TableViewCell.loadNib(), forCellReuseIdentifier: TableViewCell.reuseIdentifier)
+        }
+    }
     
     // ViewModelの書き方のひとつで、input,outputを明確に分けた書き方
     private let viewModel = MVVMViewModel()
@@ -36,17 +37,20 @@ final class RxMVVMViewController: UIViewController, HasDisposeBag {
         // 文字列のストリーム (1)
         let searchWordObservable = textField.rx.text
             .debounce(RxTimeInterval.milliseconds(300), scheduler: MainScheduler.instance)
-//            .distinctUntilChanged().filterNil()
-        
+            .distinctUntilChanged()
+            .asObservable()
+            .filterNil()
+
+
         // ソートのストリーム (2)
         // 初回読み込み時または変化があれば、segmentedControlのindexをストリームに流す
         let sortTypeObservable = Observable.merge(
             Observable.just(segmentedControl.selectedSegmentIndex),
             segmentedControl.rx.controlEvent(.valueChanged).map { self.segmentedControl.selectedSegmentIndex }
         ).map { $0 == 0 }
-        
+
         // inputのプロパティと繋げる(bindはそのまま値をストリームに流す)
-//        searchWordObservable.bind(to: input.searchWordObserver).disposed(by: disposeBag)
+        searchWordObservable.bind(to: input.searchWordObserver).disposed(by: disposeBag)
         sortTypeObservable.bind(to: input.sortTypeObserver).disposed(by: disposeBag)
     }
     
@@ -61,17 +65,24 @@ final class RxMVVMViewController: UIViewController, HasDisposeBag {
     }
 }
 
-//extension RxMVVMViewController: UITableViewDataSource {
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        // outputの中にmodelsがある
-//        return output.models.count
-//    }
+extension RxMVVMViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // outputの中にmodelsがある
+        return output.models.count
+    }
     
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        guard let gitHubModel = output.models[safe: indexPath.item],
-//              let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCell.reuseIdentifier, for: indexPath) as? TableViewCell
-//        else { return UITableViewCell() }
-//        cell.configure(gitHubModel: gitHubModel)
-//        return cell
-//    }
-//}
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let gitHubModel = output.models[safe: indexPath.item],
+              let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCell.reuseIdentifier, for: indexPath) as? TableViewCell
+        else { return UITableViewCell() }
+        cell.configure(gitHubModel: gitHubModel)
+        return cell
+    }
+}
+
+// 範囲外にアクセスしても落ちないでnilを返すためのextension
+extension Array {
+    subscript (safe index: Int) -> Element? {
+        return index >= 0 && index < self.count ? self[index] : nil
+    }
+}
