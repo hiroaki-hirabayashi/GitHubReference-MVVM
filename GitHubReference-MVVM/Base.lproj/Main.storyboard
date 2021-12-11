@@ -9,13 +9,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Storyboard Reference-->
+        <!--RxNoMvvm-->
         <scene sceneID="dda-ic-L6R">
             <objects>
-                <viewControllerPlaceholder id="XjS-MY-39W" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="RxNoMvvm" id="XjS-MY-39W" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="5Vt-fD-P6T"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nhz-nK-ejI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1518" y="205"/>
+            <point key="canvasLocation" x="1701" y="212"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -40,6 +42,9 @@
                                         <rect key="frame" x="0.0" y="39" width="95.5" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="MVVMなし"/>
+                                        <connections>
+                                            <segue destination="XjS-MY-39W" kind="show" id="GPe-yH-Duk"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
