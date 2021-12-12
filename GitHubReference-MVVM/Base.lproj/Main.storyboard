@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--RxNoMvvm-->
+        <!--RxNoMVVM-->
         <scene sceneID="dda-ic-L6R">
             <objects>
-                <viewControllerPlaceholder storyboardName="RxNoMvvm" id="XjS-MY-39W" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="RxNoMVVM" id="XjS-MY-39W" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="5Vt-fD-P6T"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nhz-nK-ejI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
