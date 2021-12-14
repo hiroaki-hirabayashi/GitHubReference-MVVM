@@ -196,8 +196,8 @@
 		F406A41327536AFB008D9BD8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F4D796B127650A1F0034A35C /* NoMVVM */,
-				F406A422275A748D008D9BD8 /* MVVM */,
+				F4D796B127650A1F0034A35C /* RxNoMVVM */,
+				F406A422275A748D008D9BD8 /* RxMVVM */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -235,22 +235,22 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
-		F406A422275A748D008D9BD8 /* MVVM */ = {
+		F406A422275A748D008D9BD8 /* RxMVVM */ = {
 			isa = PBXGroup;
 			children = (
 				F406A4192754B480008D9BD8 /* RxMVVMViewController.swift */,
 				F406A4172754B362008D9BD8 /* RxMVVM.storyboard */,
 			);
-			path = MVVM;
+			path = RxMVVM;
 			sourceTree = "<group>";
 		};
-		F4D796B127650A1F0034A35C /* NoMVVM */ = {
+		F4D796B127650A1F0034A35C /* RxNoMVVM */ = {
 			isa = PBXGroup;
 			children = (
 				F4D796B227650A460034A35C /* RxNoMVVMViewController.swift */,
 				F4D796B427650AE70034A35C /* RxNoMVVM.storyboard */,
 			);
-			path = NoMVVM;
+			path = RxNoMVVM;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
