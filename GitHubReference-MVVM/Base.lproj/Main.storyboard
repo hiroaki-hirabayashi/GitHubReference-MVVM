@@ -28,23 +28,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4in-kX-jyV">
-                                <rect key="frame" x="159.5" y="413" width="95.5" height="70"/>
+                                <rect key="frame" x="147" y="254.5" width="120" height="387"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95u-ie-38G" userLabel="MVVM">
-                                        <rect key="frame" x="0.0" y="0.0" width="95.5" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="31"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="MVVM"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="RxMVVM"/>
                                         <connections>
                                             <segue destination="G1D-BQ-tED" kind="show" id="7VT-f9-Gc1"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkh-7q-PQ4">
-                                        <rect key="frame" x="0.0" y="39" width="95.5" height="31"/>
+                                        <rect key="frame" x="0.0" y="178" width="120" height="31"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" title="MVVMなし"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="RxNoMVVM"/>
                                         <connections>
                                             <segue destination="XjS-MY-39W" kind="show" id="GPe-yH-Duk"/>
                                         </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bB-HS-QWL">
+                                        <rect key="frame" x="0.0" y="356" width="120" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="NoRxNoMVVM"/>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -52,7 +57,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="4in-kX-jyV" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.078125" id="Lt7-my-NJ7"/>
+                            <constraint firstItem="4in-kX-jyV" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.5" id="Lt7-my-NJ7"/>
                             <constraint firstItem="4in-kX-jyV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="twg-Mj-DId"/>
                             <constraint firstItem="4in-kX-jyV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xag-eN-Xfg"/>
                         </constraints>
