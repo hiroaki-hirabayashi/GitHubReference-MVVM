@@ -28,6 +28,8 @@
 		F4CDBF70275BDA4C00164B50 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4CDBF6E275BDA4C00164B50 /* TableViewCell.xib */; };
 		F4D796B327650A460034A35C /* RxNoMVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D796B227650A460034A35C /* RxNoMVVMViewController.swift */; };
 		F4D796B527650AE70034A35C /* RxNoMVVM.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4D796B427650AE70034A35C /* RxNoMVVM.storyboard */; };
+		F4D796B8276A2F9E0034A35C /* NoRxNoMVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D796B7276A2F9E0034A35C /* NoRxNoMVVMViewController.swift */; };
+		F4D796BA276A2FE10034A35C /* NoRxNoMVVM.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4D796B9276A2FE10034A35C /* NoRxNoMVVM.storyboard */; };
 		F6C4B6778AA7B9E21A79A13C /* Pods_GitHubReference_MVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BEA61F1314EA1D44FE717AD /* Pods_GitHubReference_MVVM.framework */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +83,8 @@
 		F4CDBF6E275BDA4C00164B50 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		F4D796B227650A460034A35C /* RxNoMVVMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxNoMVVMViewController.swift; sourceTree = "<group>"; };
 		F4D796B427650AE70034A35C /* RxNoMVVM.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RxNoMVVM.storyboard; sourceTree = "<group>"; };
+		F4D796B7276A2F9E0034A35C /* NoRxNoMVVMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoRxNoMVVMViewController.swift; sourceTree = "<group>"; };
+		F4D796B9276A2FE10034A35C /* NoRxNoMVVM.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NoRxNoMVVM.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +200,7 @@
 		F406A41327536AFB008D9BD8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F4D796B6276A2F710034A35C /* NoRxNoMVVM */,
 				F4D796B127650A1F0034A35C /* RxNoMVVM */,
 				F406A422275A748D008D9BD8 /* RxMVVM */,
 			);
@@ -251,6 +256,15 @@
 				F4D796B427650AE70034A35C /* RxNoMVVM.storyboard */,
 			);
 			path = RxNoMVVM;
+			sourceTree = "<group>";
+		};
+		F4D796B6276A2F710034A35C /* NoRxNoMVVM */ = {
+			isa = PBXGroup;
+			children = (
+				F4D796B7276A2F9E0034A35C /* NoRxNoMVVMViewController.swift */,
+				F4D796B9276A2FE10034A35C /* NoRxNoMVVM.storyboard */,
+			);
+			path = NoRxNoMVVM;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,6 +382,7 @@
 				F406A3F0275368A7008D9BD8 /* LaunchScreen.storyboard in Resources */,
 				F406A3ED275368A7008D9BD8 /* Assets.xcassets in Resources */,
 				F406A3E8275368A5008D9BD8 /* Main.storyboard in Resources */,
+				F4D796BA276A2FE10034A35C /* NoRxNoMVVM.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +516,7 @@
 				F4CDBF6F275BDA4C00164B50 /* TableViewCell.swift in Sources */,
 				F406A3E5275368A5008D9BD8 /* ViewController.swift in Sources */,
 				F406A3E1275368A5008D9BD8 /* AppDelegate.swift in Sources */,
+				F4D796B8276A2F9E0034A35C /* NoRxNoMVVMViewController.swift in Sources */,
 				F4D796B327650A460034A35C /* RxNoMVVMViewController.swift in Sources */,
 				F406A41F27566D8C008D9BD8 /* GitHubModel.swift in Sources */,
 				F406A41A2754B480008D9BD8 /* RxMVVMViewController.swift in Sources */,
